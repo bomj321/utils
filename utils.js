@@ -74,3 +74,11 @@ export const formatNewDate = (date, lang) => {
 };
 
 export const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+export const subStr = (str) => {
+  if (str.length > 50) {
+    return str.subStr(0, 50) + "...";
+  } else {
+    return str;
+  }
+};
