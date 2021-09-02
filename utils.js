@@ -76,8 +76,8 @@ export const formatNewDate = (date, lang) => {
 export const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 export const subStr = (str) => {
-  if (str.length > 50) {
-    return str.subStr(0, 50) + "...";
+  if (str.length > 100) {
+    return String(str).substr(0, 100) + "...";
   } else {
     return str;
   }
